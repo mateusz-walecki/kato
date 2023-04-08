@@ -1,0 +1,15 @@
+@import "./normalize.css";
+@import "./variables.scss";
+
+*{
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+
+}
+
+.App{
+  height: 100vh;
+  width: 100%;
+  background-color: rgb(33, 31, 29) ;
+}
