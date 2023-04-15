@@ -1,6 +1,8 @@
 @import "../variables.scss";
 .header {
   overflow: hidden;
+  background-color: black;
+  margin-bottom: $size-x2;
 }
 
 .slider.register ul li a {
@@ -20,14 +22,16 @@
   list-style: none;
 }
 .typicle {
-  font-size: $size-x2;
-  text-decoration: none;
+  display: flex;
+  margin: $size-x2 auto $size-x2 auto;
   color: $bright-color-text;
+  align-items: center;
 }
 .register {
   display: flex;
   align-items: center;
   justify-content: center;
+  margin: $size-x2 auto $size-x2 auto;
   height: $size-x5;
   width: 129px;
   border-radius: $size-x5;
@@ -60,7 +64,9 @@
 
 .logoWide {
   display: flex;
-  margin: $size-x2 auto $size-x2 $size-x2;
+  margin: auto auto auto 0;
+  color: $bright-color-text;
+  align-items: center;
 }
 .company {
   display: flex;
@@ -86,8 +92,9 @@
     justify-content: space-between;
     position: fixed;
     min-width: 100%;
-    height: 638px;
-    top: -100%;
+    height: 100%;
+    max-height: 638px;
+    top: -150%;
     background-color: $dark-color;
     transition: 1s ease;
   }
@@ -98,6 +105,8 @@
   .slider ul {
     display: flex;
     flex-direction: column;
+    width: 100%;
+   padding: 0;
     align-items: center;
     justify-content: space-between;
   }
@@ -114,6 +123,7 @@
   .typicle {
     font-size: $size-x2;
     text-decoration: none;
+    margin: auto;
   }
   .register {
     display: flex;
@@ -121,6 +131,7 @@
     justify-content: center;
     height: $size-x5;
     width: 129px;
+    margin: auto;
     border-radius: $size-x5;
     background-color: $bright-color;
     color: $dark-color-text;
@@ -181,5 +192,17 @@
     justify-content: center;
     align-items: center;
     margin: 0 auto;
+  }
+  .register {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin: auto;
+    height: $size-x5;
+    width: 129px;
+    border-radius: $size-x5;
+    background-color: $bright-color;
+    color: $dark-color-text;
+    right: 0;
   }
 }
