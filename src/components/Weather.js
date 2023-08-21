@@ -6,7 +6,7 @@ import "./Weather.scss";
 const CITIES = ["London", "München", "Wrocław"];
 
 const fetch = async (location) => {
-  const appid = `38ade7fb7fbfd60e57aed4f5a7a6cb56`;
+  const appid = `e1ad444819435f8265e9d03101b37691f`;
   const url = `https://api.openweathermap.org/data/2.5/forecast?q=${location}&appid=${appid}`;
   const { data } = await axios.get(url);
   return data;
